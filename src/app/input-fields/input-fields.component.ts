@@ -6,5 +6,5 @@ import { Component } from '@angular/core';
   styleUrls: ['./input-fields.component.css']
 })
 export class InputFieldsComponent {
-
+  heatNumber = 0;
 }
