@@ -1,0 +1,15 @@
+.col-md-6, .col-md-5{
+    background-color: white;
+    padding: 1.5em 1.6em 1.5em 1.6em;
+    -webkit-box-shadow: 7px 13px 21px -6px rgba(3,14,46,0.05);
+    -moz-box-shadow: 7px 13px 21px -6px rgba(3,14,46,0.05);
+    box-shadow: 7px 13px 21px -6px rgba(3,14,46,0.05);
+    margin-right: 2.5em;
+    border-radius: 8px;
+}
+
+#parentContainer{
+    background-color: #dadfdf;
+    padding-top: 4em;
+    padding-bottom: 4em;
+}
