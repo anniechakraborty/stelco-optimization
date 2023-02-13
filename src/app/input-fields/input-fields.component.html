@@ -2,10 +2,12 @@
     <div class="row">
         <div class="col-md-6">
             <label for="heat">Heat Number</label>
+            <mat-icon>thermostat</mat-icon>
             <input type="text" name="heat" id="heat" class="form-control" [(ngModel)]="heat">
         </div>
         <div class="col-md-6">
             <label for="date">Date</label>
+            <mat-icon>event</mat-icon>
             <input type="date" name="date" id="date" class="form-control" [(ngModel)]="date">
         </div>
     </div>
@@ -151,15 +153,15 @@
     <div class="row d-flex justify-content-between">
         <div class="col-md-4">
             <!-- <button type="button" class="btn btn-primary btn-block">Get Results</button> -->
-            <button mat-raised-button>Get Results</button>
+            <button mat-raised-button color="primary">Get Results</button>
         </div>
         <div class="col-md-4">
             <!-- <button type="button" class="btn btn-danger btn-block" (click)="clearInput()">Clear</button> -->
-            <button mat-raised-button (click)="clearInput()">Clear</button>
+            <button mat-raised-button color="warn" (click)="clearInput()">Clear</button>
         </div>
         <div class="col-md-4">
             <!-- <button type="button" class="btn btn-primary btn-block">History</button> -->
-            <button mat-stroked-button>History</button>
+            <button mat-raised-button color="primary">History</button>
         </div>
     </div>
 </form>
