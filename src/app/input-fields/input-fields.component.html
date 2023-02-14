@@ -1,153 +1,155 @@
 <form>
     <div class="row">
         <div class="col-md-6">
-            <label for="heat">Heat Number</label>
-            <mat-icon>thermostat</mat-icon>
-            <input type="text" name="heat" id="heat" class="form-control" [(ngModel)]="heat">
+            <mat-form-field>
+                <mat-label for="heat">Heat Number<mat-icon>thermostat</mat-icon></mat-label>
+                <input matInput type="text" name="heat" id="heat" [(ngModel)]="heat">
+            </mat-form-field>
         </div>
         <div class="col-md-6">
-            <label for="date">Date</label>
-            <mat-icon>event</mat-icon>
-            <input type="date" name="date" id="date" class="form-control" [(ngModel)]="date">
+            <mat-form-field>
+                <mat-label for="date">Date<mat-icon>event</mat-icon></mat-label>
+                <input matInput type="date" name="date" id="date" [(ngModel)]="date">
+            </mat-form-field>
         </div>
     </div>
     <div class="row">
-        <div class="col-md-12 mat-display-4">
-            Please enter the input data or upload the excel file
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label for="liqTemp">
-                Liquidious Temp
-                <input type="text" name="liqTemp" id="liqTemp" class="form-control" [(ngModel)]="liqTemp">
-            </label>
-        </div>
-        <div class="col-md-6">
-            <label for="preCastWGT">
-                PRE CAST WGT
-                <input type="text" name="preCastWGT" id="preCastWGT" class="form-control" [(ngModel)]="preCastWGT">
-            </label>
+        <div class="col-md-12">
+            <h3>Please enter the input data or upload the excel file</h3>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <label for="castSteelWGT">
-                CAST STEEL WGT
-                <input type="text" name="castSteelWGT" id="castSteelWGT" class="form-control" [(ngModel)]="castSteelWGT">
-            </label>
+            <mat-form-field>
+            <mat-label for="liqTemp">Liquidious Temp</mat-label>            
+            <input matInput type="text" name="liqTemp" id="liqTemp" [(ngModel)]="liqTemp">
+            </mat-form-field>
         </div>
         <div class="col-md-6">
-            <label for="ldlLife">
-                LDL Life
-                <input type="text" name="ldlLife" id="ldlLife" class="form-control" [(ngModel)]="ldlLife">
-            </label>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label for="timeSteel">
-                Time with Steel
-                <input type="text" name="timeSteel" id="timeSteel" class="form-control" [(ngModel)]="timeSteel">
-            </label>
-        </div>
-        <div class="col-md-6">
-            <label for="empty0">
-                Empty 0
-                <input type="text" name="empty0" id="empty0" class="form-control" [(ngModel)]="empty0">
-            </label>
+            <mat-form-field>
+            <mat-label for="preCastWGT">PRE CAST WGT</mat-label>
+            <input matInput type="text" name="preCastWGT" id="preCastWGT" [(ngModel)]="preCastWGT">
+            </mat-form-field>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <label for="empty01">
-                Empty 01
-                <input type="text" name="empty01" id="empty01" class="form-control" [(ngModel)]="empty01">
-            </label>
+            <mat-form-field>
+            <mat-label for="castSteelWGT">CAST STEEL WGT</mat-label>            
+            <input matInput type="text" name="castSteelWGT" id="castSteelWGT" [(ngModel)]="castSteelWGT">
+            </mat-form-field>
         </div>
         <div class="col-md-6">
-            <label for="empty02">
-                Empty 02
-                <input type="text" name="empty02" id="empty02" class="form-control" [(ngModel)]="empty02">
-            </label>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label for="empty03">
-                Empty 03
-                <input type="text" name="empty03" id="empty03" class="form-control" [(ngModel)]="empty03">
-            </label>
-        </div>
-        <div class="col-md-6">
-            <label for="bombTemp">
-                BOMB TEMP
-                <input type="text" name="bombTemp" id="bombTemp" class="form-control" [(ngModel)]="bombTemp">
-            </label>
+            <mat-form-field>
+            <mat-label for="ldlLife">LDL Life</mat-label>
+            <input matInput type="text" name="ldlLife" id="ldlLife" [(ngModel)]="ldlLife">
+            </mat-form-field>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <label for="tapToStartSec">
-                TAP to START SEC
-                <input type="text" name="tapToStartSec" id="tapToStartSec" class="form-control" [(ngModel)]="tapToStartSec">
-            </label>
+            <mat-form-field>
+            <mat-label for="timeSteel">Time with Steel</mat-label>
+            <input matInput type="text" name="timeSteel" id="timeSteel" [(ngModel)]="timeSteel">
+            </mat-form-field>
         </div>
         <div class="col-md-6">
-            <label for="treatmDur">
-                TREATM DUR
-                <input type="text" name="treatmDur" id="treatmDur" class="form-control" [(ngModel)]="treatmDur">
-            </label>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label for="castingDur">
-                CASTING DUR
-                <input type="text" name="castingDur" id="castingDur" class="form-control" [(ngModel)]="castingDur">
-            </label>
-        </div>
-        <div class="col-md-6">
-            <label for="lastTempToSec200MT">
-                LAST TEMP SEC TO 200MT
-                <input type="text" name="lastTempToSec200MT" id="lastTempToSec200MT" class="form-control" [(ngModel)]="lastTempToSec200MT">
-            </label>
+            <mat-form-field>
+            <mat-label for="empty0">Empty 0</mat-label>            
+            <input matInput type="text" name="empty0" id="empty0" [(ngModel)]="empty0">
+            </mat-form-field>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <label for="facCd">
-                FAC CD
-                <input type="text" name="facCd" id="facCd" class="form-control" [(ngModel)]="facCd">
-            </label>
+            <mat-form-field>
+            <mat-label for="empty01">Empty 01</mat-label>
+            <input matInput type="text" name="empty01" id="empty01" [(ngModel)]="empty01">
+            </mat-form-field>
         </div>
-        <div class="col-md-6">
-            <label for="postFtcHT">
-                POST FTC HT
-                <input type="text" name="postFtcHT" id="postFtcHT" class="form-control" [(ngModel)]="postFtcHT">
-            </label>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <label for="postLitHT">
-                POST LIT HT
-                <input type="text" name="postLitHT" id="postLitHT" class="form-control" [(ngModel)]="postLitHT">
-            </label>
-        </div>
-        <div class="col-md-6">
-            <label for="exitTemp">
-                EXIT TEMP
-                <input type="text" name="exitTemp" id="exitTemp" class="form-control" [(ngModel)]="exitTemp">
-            </label>
+        <div class="col-md-6mat-">
+            <mat-form-field>
+            <mat-label for="empty02">Empty 02</mat-label>
+            <input matInput type="text" name="empty02" id="empty02" [(ngModel)]="empty02">
+            </mat-form-field>
         </div>
     </div>
     <div class="row">
         <div class="col-md-6">
-            <label for="time200To25MT">
-                Time 200 to 25MT
-                <input type="text" name="time200To25MT" id="time200To25MT" class="form-control" [(ngModel)]="time200To25MT">
-            </label>
+            <mat-form-field>
+            <mat-label for="empty03">Empty 03</mat-label>
+            <input matInput type="text" name="empty03" id="empty03" [(ngModel)]="empty03">
+            </mat-form-field>
+        </div>
+        <div class="col-md-6">
+            <mat-form-field>
+            <mat-label for="bombTemp">BOMB TEMP</mat-label>
+            <input matInput type="text" name="bombTemp" id="bombTemp" [(ngModel)]="bombTemp">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <mat-form-field>
+            <mat-label for="tapToStartSec">TAP to START SEC</mat-label>
+            <input matInput type="text" name="tapToStartSec" id="tapToStartSec" [(ngModel)]="tapToStartSec">
+            </mat-form-field>
+        </div>
+        <div class="col-md-6">
+            <mat-form-field>
+            <mat-label for="treatmDur">TREATM DUR</mat-label>
+            <input matInput type="text" name="treatmDur" id="treatmDur" [(ngModel)]="treatmDur">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <mat-form-field>
+            <mat-label for="castingDur">CASTING DUR</mat-label>
+            <input matInput type="text" name="castingDur" id="castingDur" [(ngModel)]="castingDur">
+            </mat-form-field>
+        </div>
+        <div class="col-md-6">
+            <mat-form-field>
+            <mat-label for="lastTempToSec200200MT">LAST TEMP SEC TO 200MT</mat-label>
+            <input matInput type="text" name="lastTempToSec200200MT" class="form-control" [(ngModel)]="lastTempToSec200MT">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <mat-form-field>
+            <mat-label for="facCd">FAC CD</mat-label>
+            <input matInput type="text" name="facCd" id="facCd" [(ngModel)]="facCd">
+            </mat-form-field>
+        </div>
+        <div class="col-md-6">
+            <mat-form-field>
+            <mat-label for="postFtcHT">POST FTC HT</mat-label>
+            <input matInput type="text" name="postFtcHT" id="postFtcHT" [(ngModel)]="postFtcHT">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <mat-form-field>
+            <mat-label for="postLitHT">POST LIT HT</mat-label>
+            <input matInput type="text" name="postLitHT" id="postLitHT" [(ngModel)]="postLitHT">
+            </mat-form-field>
+        </div>
+        <div class="col-md-6">
+            <mat-form-field>
+            <mat-label for="exitTemp">EXIT TEMP</mat-label>
+            <input matInput type="text" name="exitTemp" id="exitTemp" [(ngModel)]="exitTemp">
+            </mat-form-field>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <mat-form-field>
+            <mat-label for="time200To25MT">Time 200 to 25MT</mat-label>
+            <input matInput type="text" name="time200To25MT" id="time200To25MT" [(ngModel)]="time200To25MT">
+            </mat-form-field>
         </div>
     </div>
     <div class="row d-flex justify-content-between">
